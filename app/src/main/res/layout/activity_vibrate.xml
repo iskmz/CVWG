@@ -1,0 +1,98 @@
+<LinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#000000"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/_16sdp"
+        android:layout_weight="3">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/icon_back"
+                android:scaleType="fitXY"
+                android:background="#000000"
+                android:id="@+id/btnBackInVibrate"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/vibrateTitle"
+                android:textSize="@dimen/_30ssp"
+                android:textColor="#009988"
+                android:textStyle="italic"
+                android:fontFamily="sans-serif-thin"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/btnBackInVibrate"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:id="@+id/txtVibTitle"/>
+
+            <ImageView
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:src="@drawable/img_wave"
+                android:layout_below="@id/btnBackInVibrate"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_toStartOf="@id/txtVibTitle"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:id="@+id/imgWaveStart"/>
+
+            <ImageView
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:src="@drawable/img_wave"
+                android:layout_below="@id/btnBackInVibrate"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_toEndOf="@id/txtVibTitle"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:id="@+id/imgWaveEnd"/>
+
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_2sdp"
+        android:background="#ffffff"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/_10sdp"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_16ssp"
+            android:textColor="#ffffff"
+            android:text="Tap to play/stop ..."
+            android:fontFamily="sans-serif-black"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:padding="@dimen/_8sdp"/>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_8sdp"
+            android:id="@+id/lstVibes"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

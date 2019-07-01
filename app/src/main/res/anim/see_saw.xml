@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillAfter="true"
+    android:shareInterpolator="@android:anim/accelerate_interpolator">
+
+
+    <!-- blinking effect -->
+
+    <alpha
+        android:startOffset="0"
+        android:fromAlpha="0.65"
+        android:toAlpha="1"
+        android:duration="300"
+        android:repeatCount="22"
+        android:repeatMode="reverse"
+        />
+
+    <!-- y-axis movement up and down -->
+
+    <translate
+        android:startOffset="0"
+        android:duration="300"
+        android:fromYDelta="-20%p"
+        android:toYDelta="0%p"
+        android:repeatCount="22"
+        android:repeatMode="reverse"
+        />
+
+    <!-- x-axis movement see saw effect -->
+
+    <translate
+        android:startOffset="0"
+        android:duration="2000"
+        android:fromXDelta="-100%p"
+        android:toXDelta="100%p"
+        />
+
+    <translate
+        android:startOffset="2000"
+        android:duration="2000"
+        android:fromXDelta="100%p"
+        android:toXDelta="-100%p"
+        />
+
+    <translate
+        android:startOffset="4000"
+        android:duration="2000"
+        android:fromXDelta="-100%p"
+        android:toXDelta="0%p"
+        />
+
+
+
+
+
+</set>

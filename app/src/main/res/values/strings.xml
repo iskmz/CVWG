@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">CVWG</string>
+    <string name="vibrateTxt">Vibrate</string>
+    <string name="wifiTxt">Wi-Fi</string>
+    <string name="cameraTxt">Camera</string>
+    <string name="gpsTxt">GPS</string>
+    <string name="vibrateTitle">Vibrationsss</string>
+    <string name="wifiTitle">WiFi</string>
+</resources>

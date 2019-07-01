@@ -1,0 +1,51 @@
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:text="SSID name"
+        android:textStyle="bold|italic"
+        android:textSize="@dimen/_16ssp"
+        android:textColor="#ffffff"
+        android:id="@+id/itemWifiSSID"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/itemWifiSSID"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:text="BSSID"
+        android:textColor="#aaaa44"
+        android:textSize="@dimen/_12ssp"
+        android:id="@+id/itemWifiBSSID"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/itemWifiBSSID"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:text="capabilities ..."
+        android:textColor="#ff8800"
+        android:textSize="@dimen/_12ssp"
+        android:id="@+id/itemWifiCapabilities"/>
+
+    <ImageView
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:src="@drawable/icon_alert"
+        android:id="@+id/itemWifiLevelImg"/>
+
+
+</RelativeLayout>

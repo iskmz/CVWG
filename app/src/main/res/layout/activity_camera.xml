@@ -1,0 +1,105 @@
+<LinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#000000"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/_16sdp"
+        android:layout_weight="4">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_back"
+            android:scaleType="fitXY"
+            android:background="#000000"
+            android:id="@+id/btnBackInCamera"/>
+
+            <ImageButton
+                android:layout_width="@dimen/_75sdp"
+                android:layout_height="@dimen/_75sdp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/icon_camera_shoot"
+                android:scaleType="fitXY"
+                android:background="#000000"
+                android:id="@+id/btnCameraShoot"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="auto-rotate"
+                android:textStyle="italic"
+                android:textSize="@dimen/_12ssp"
+                android:checked="false"
+                android:textColor="#0077ff"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="@dimen/_6sdp"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:id="@+id/checkAutoRotate"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:textSize="@dimen/_12ssp"
+                android:text=".../..."
+                android:textColor="#00ff00"
+                android:textStyle="italic"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:id="@+id/txtLoadingPhotos"/>
+
+            <ProgressBar
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_toStartOf="@id/txtLoadingPhotos"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:id="@+id/progressBar"
+                android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_2sdp"
+        android:background="#ffffff"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/_10sdp"
+        android:layout_weight="1">
+
+        <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:columnWidth="@dimen/_80sdp"
+            android:numColumns="auto_fit"
+            android:stretchMode="columnWidth"
+            android:gravity="center"
+            android:verticalSpacing="0dp"
+            android:horizontalSpacing="0dp"
+            android:adjustViewBounds="true"
+            android:id="@+id/gridAlbum">
+
+        </GridView>
+
+
+    </LinearLayout>
+
+</LinearLayout>

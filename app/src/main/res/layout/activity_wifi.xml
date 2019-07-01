@@ -1,0 +1,103 @@
+<LinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#000000"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/_16sdp"
+        android:layout_weight="4">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/icon_back"
+                android:scaleType="fitXY"
+                android:background="#000000"
+                android:id="@+id/btnBackInWiFi"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/wifiTitle"
+                android:textSize="@dimen/_32ssp"
+                android:textColor="#4499ff"
+                android:textStyle="bold"
+                android:fontFamily="serif-monospace"
+                android:layout_centerInParent="true"
+                android:id="@+id/txtWiFiTitle"/>
+
+            <ImageButton
+                android:layout_width="@dimen/_55sdp"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/icon_refresh"
+                android:scaleType="fitXY"
+                android:background="#000000"
+                android:id="@+id/btnRefreshInWiFi"/>
+
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_2sdp"
+        android:background="#ffffff"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/_10sdp"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="timestamp"
+            android:textSize="@dimen/_12ssp"
+            android:gravity="end"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-light"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:textColor="#ffff00"
+            android:id="@+id/txtTimeScan"
+            android:visibility="gone"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_16ssp"
+            android:textColor="#ffffff"
+            android:text="list of nearby WiFi networks ..."
+            android:textStyle="italic|bold"
+            android:fontFamily="sans-serif"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:padding="@dimen/_8sdp"
+            android:id="@+id/txtWifiListMsg"/>
+
+
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_8sdp"
+            android:id="@+id/lstNetworks"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

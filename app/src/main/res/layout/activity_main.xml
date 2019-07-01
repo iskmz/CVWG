@@ -1,0 +1,166 @@
+<LinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#000000"
+    android:id="@+id/layoutMainAct"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/_20sdp">
+
+        <ImageButton
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:src="@drawable/icon_camera"
+            android:scaleType="fitXY"
+            android:background="#000000"
+            android:id="@+id/btnCamera"
+            android:onClick="onClickCamera"/>
+
+        <ImageButton
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginEnd="@dimen/_30sdp"
+            android:src="@drawable/icon_vibrate"
+            android:scaleType="fitXY"
+            android:background="@drawable/btn_back_vibrate"
+            android:id="@+id/btnVibrate"
+            android:onClick="onClickVibrate"/>
+
+        <ImageButton
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/_30sdp"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:src="@drawable/icon_wifi"
+            android:scaleType="fitXY"
+            android:background="#000000"
+            android:id="@+id/btnWifi"
+            android:onClick="onClickWifi"/>
+
+        <ImageButton
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/_30sdp"
+            android:layout_marginEnd="@dimen/_30sdp"
+            android:src="@drawable/icon_gps"
+            android:scaleType="fitXY"
+            android:background="#000000"
+            android:id="@+id/btnGPS"
+            android:onClick="onClickGPS"/>
+
+        <ImageButton
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_centerVertical="true"
+            android:layout_alignEnd="@id/btnVibrate"
+            android:layout_marginEnd="@dimen/_40sdp"
+            android:src="@drawable/icon_quit"
+            android:scaleType="fitXY"
+            android:background="#000000"
+            android:id="@+id/btnQuit"/>
+
+        <ImageButton
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_centerVertical="true"
+            android:layout_alignStart="@id/btnCamera"
+            android:layout_marginStart="@dimen/_40sdp"
+            android:src="@drawable/icon_about"
+            android:scaleType="fitXY"
+            android:background="#000000"
+            android:id="@+id/btnAbout"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnCamera"
+            android:layout_alignStart="@id/btnCamera"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textColor="#ff8800"
+            android:text="@string/cameraTxt"
+            android:fontFamily="sans-serif"
+            android:textStyle="italic"
+            android:textSize="@dimen/_22ssp"
+            android:id="@+id/txtCamera"
+            android:onClick="onClickCamera"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnVibrate"
+            android:layout_alignStart="@id/btnVibrate"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:textColor="#009988"
+            android:text="@string/vibrateTxt"
+            android:fontFamily="sans-serif"
+            android:textStyle="italic"
+            android:textSize="@dimen/_22ssp"
+            android:id="@+id/txtVibrate"
+            android:onClick="onClickVibrate"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/btnWifi"
+            android:layout_alignStart="@id/btnWifi"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:textColor="#4499ff"
+            android:text="@string/wifiTxt"
+            android:fontFamily="sans-serif"
+            android:textStyle="italic"
+            android:textSize="@dimen/_22ssp"
+            android:id="@+id/txtWiFi"
+            android:onClick="onClickWifi"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/btnGPS"
+            android:layout_alignStart="@id/btnGPS"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:textColor="#00ff55"
+            android:text="@string/gpsTxt"
+            android:fontFamily="sans-serif"
+            android:textStyle="italic"
+            android:textSize="@dimen/_22ssp"
+            android:id="@+id/txtGPS"
+            android:onClick="onClickGPS"
+            />
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>
