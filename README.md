@@ -11,6 +11,7 @@ W ifi
 
 G PS
 
+------------------------
 
 as the name says, an ANDROID app to demosntrate these 4 functions.
 
